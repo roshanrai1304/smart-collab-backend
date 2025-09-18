@@ -1,0 +1,555 @@
+INFO 2025-09-12 06:54:11,019 autoreload 82323 8804327616 Watching for file changes with StatReloader
+INFO 2025-09-12 07:09:18,999 autoreload 83252 8804327616 Watching for file changes with StatReloader
+INFO 2025-09-12 07:09:43,976 basehttp 83252 6170210304 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-12 07:09:43,993 basehttp 83252 6170210304 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-09-12 07:09:44,022 basehttp 83252 6203863040 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-09-12 07:09:44,022 basehttp 83252 6237515776 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-09-12 07:09:44,022 basehttp 83252 6187036672 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-09-12 07:09:44,023 basehttp 83252 6220689408 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-09-12 07:09:44,023 basehttp 83252 6170210304 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-09-12 07:09:44,023 basehttp 83252 6254342144 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-09-12 07:09:44,027 basehttp 83252 6170210304 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-09-12 07:11:10,388 basehttp 83252 6170210304 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4353
+INFO 2025-09-12 07:14:00,965 autoreload 84834 8804327616 Watching for file changes with StatReloader
+INFO 2025-09-12 07:14:05,413 basehttp 84834 6137475072 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-09-12 07:14:14,578 basehttp 84834 6137475072 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-12 07:14:14,596 basehttp 84834 6137475072 "GET /admin/ HTTP/1.1" 200 9598
+INFO 2025-09-12 07:14:14,620 basehttp 84834 6137475072 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-09-12 07:14:14,624 basehttp 84834 6137475072 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-09-12 07:14:14,624 basehttp 84834 6154301440 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-09-12 07:14:14,625 basehttp 84834 6171127808 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-09-12 07:14:18,435 basehttp 84834 6171127808 "GET /admin/authentication/emailverification/ HTTP/1.1" 200 12434
+INFO 2025-09-12 07:14:18,453 basehttp 84834 6187954176 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-09-12 07:14:18,454 basehttp 84834 6204780544 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-09-12 07:14:18,454 basehttp 84834 6221606912 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-09-12 07:14:18,457 basehttp 84834 6204780544 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-09-12 07:14:18,458 basehttp 84834 6187954176 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-09-12 07:14:18,460 basehttp 84834 6221606912 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-09-12 07:14:18,461 basehttp 84834 6204780544 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-09-12 07:14:18,462 basehttp 84834 6171127808 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-12 07:14:18,463 basehttp 84834 6187954176 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-09-12 07:14:18,465 basehttp 84834 6154301440 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-09-12 07:14:18,466 basehttp 84834 6137475072 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-09-12 07:14:18,469 basehttp 84834 6137475072 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-09-12 07:22:46,060 autoreload 86872 8804327616 Watching for file changes with StatReloader
+INFO 2025-09-12 11:09:21,045 autoreload 94756 8804327616 Watching for file changes with StatReloader
+INFO 2025-09-12 11:09:36,056 basehttp 94756 6133854208 "GET /admin/authentication/emailverification/ HTTP/1.1" 200 12434
+INFO 2025-09-12 11:09:36,076 basehttp 94756 6133854208 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,077 basehttp 94756 6167506944 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,077 basehttp 94756 6184333312 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,078 basehttp 94756 6201159680 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,079 basehttp 94756 6133854208 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,079 basehttp 94756 6167506944 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,080 basehttp 94756 6217986048 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,080 basehttp 94756 6184333312 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,080 basehttp 94756 6201159680 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,082 basehttp 94756 6133854208 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,083 basehttp 94756 6201159680 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,083 basehttp 94756 6167506944 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,083 basehttp 94756 6217986048 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,084 basehttp 94756 6184333312 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,086 basehttp 94756 6217986048 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,086 basehttp 94756 6150680576 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-12 11:09:36,089 basehttp 94756 6217986048 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,089 basehttp 94756 6150680576 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,096 basehttp 94756 6217986048 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:36,096 basehttp 94756 6150680576 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-09-12 11:09:40,222 basehttp 94756 6150680576 "GET /admin/authentication/loginattempt/ HTTP/1.1" 200 11610
+INFO 2025-09-12 11:09:40,249 basehttp 94756 6150680576 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-12 11:09:41,345 basehttp 94756 6150680576 "GET /admin/authentication/passwordresettoken/ HTTP/1.1" 200 12427
+INFO 2025-09-12 11:09:41,365 basehttp 94756 6150680576 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-12 11:09:42,284 basehttp 94756 6150680576 "GET /admin/authentication/refreshtoken/ HTTP/1.1" 200 12401
+INFO 2025-09-12 11:09:42,310 basehttp 94756 6150680576 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-12 11:09:43,076 basehttp 94756 6150680576 "GET /admin/authentication/userprofile/ HTTP/1.1" 200 14605
+INFO 2025-09-12 11:09:43,112 basehttp 94756 6150680576 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-12 11:09:43,130 basehttp 94756 6150680576 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-09-12 11:09:50,985 basehttp 94756 6150680576 "GET /admin/authentication/userprofile/1ca2397b-7699-4669-9e65-a60b1a48be9e/change/ HTTP/1.1" 200 15814
+INFO 2025-09-12 11:09:51,002 basehttp 94756 6150680576 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-09-12 11:09:51,003 basehttp 94756 6167506944 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-09-12 11:09:51,003 basehttp 94756 6201159680 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-09-12 11:09:51,003 basehttp 94756 6184333312 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-09-12 11:09:51,005 basehttp 94756 6184333312 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-09-12 11:09:51,007 basehttp 94756 6184333312 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-09-12 11:09:51,008 basehttp 94756 6217986048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-12 11:09:51,025 basehttp 94756 6217986048 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-09-12 11:09:51,025 basehttp 94756 6184333312 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-09-12 11:10:02,303 basehttp 94756 6184333312 "GET /admin/authentication/userprofile/ HTTP/1.1" 200 14605
+INFO 2025-09-12 11:50:13,443 autoreload 97147 8804327616 Watching for file changes with StatReloader
+INFO 2025-09-14 08:54:29,140 autoreload 57469 8804327616 Watching for file changes with StatReloader
+INFO 2025-09-18 09:42:10,318 autoreload 81093 8804327616 Watching for file changes with StatReloader
+WARNING 2025-09-18 09:44:42,922 log 81093 6201618432 Unauthorized: /api/v1/auth/login/
+WARNING 2025-09-18 09:44:42,923 basehttp 81093 6201618432 "POST /api/v1/auth/login/ HTTP/1.1" 401 63
+INFO 2025-09-18 09:45:03,871 basehttp 81093 6218444800 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-18 09:45:03,897 basehttp 81093 6218444800 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-09-18 09:45:03,903 basehttp 81093 6218444800 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:03,903 basehttp 81093 6235271168 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:03,904 basehttp 81093 6252097536 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:03,915 basehttp 81093 6252097536 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:03,915 basehttp 81093 6218444800 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:03,915 basehttp 81093 6235271168 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:03,917 basehttp 81093 6235271168 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:22,012 basehttp 81093 6218444800 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4356
+INFO 2025-09-18 09:45:22,022 basehttp 81093 6218444800 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:22,025 basehttp 81093 6235271168 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:22,026 basehttp 81093 6218444800 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:22,026 basehttp 81093 6268923904 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:22,026 basehttp 81093 6252097536 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:22,027 basehttp 81093 6285750272 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:22,027 basehttp 81093 6268923904 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:34,756 basehttp 81093 6218444800 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2025-09-18 09:45:34,772 basehttp 81093 6218444800 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:34,778 basehttp 81093 6252097536 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:34,778 basehttp 81093 6235271168 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:34,778 basehttp 81093 6218444800 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:34,779 basehttp 81093 6285750272 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:34,779 basehttp 81093 6268923904 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:45:34,780 basehttp 81093 6285750272 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+ERROR 2025-09-18 09:46:06,437 log 81093 6218444800 Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/views.py", line 80, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/serializers.py", line 100, in validate
+    data['user'] = user_serializer.data
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `timezone` is not valid for model `UserProfile` in `apps.authentication.serializers.UserProfileSerializer`.
+ERROR 2025-09-18 09:46:06,438 basehttp 81093 6218444800 "POST /api/v1/auth/login/ HTTP/1.1" 500 170445
+INFO 2025-09-18 09:46:43,946 basehttp 81093 6235271168 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-18 09:46:43,966 basehttp 81093 6235271168 "GET /admin/ HTTP/1.1" 200 9598
+INFO 2025-09-18 09:46:43,991 basehttp 81093 6235271168 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,993 basehttp 81093 6252097536 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,994 basehttp 81093 6235271168 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,994 basehttp 81093 6285750272 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,994 basehttp 81093 6268923904 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,994 basehttp 81093 6302576640 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,996 basehttp 81093 6302576640 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,997 basehttp 81093 6285750272 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,997 basehttp 81093 6268923904 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:43,998 basehttp 81093 6302576640 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,478 basehttp 81093 6235271168 "GET /admin/authentication/loginattempt/ HTTP/1.1" 200 14605
+INFO 2025-09-18 09:46:56,489 basehttp 81093 6235271168 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,494 basehttp 81093 6268923904 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,495 basehttp 81093 6302576640 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,496 basehttp 81093 6319403008 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,497 basehttp 81093 6268923904 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,498 basehttp 81093 6302576640 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,498 basehttp 81093 6319403008 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,499 basehttp 81093 6268923904 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,500 basehttp 81093 6302576640 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,501 basehttp 81093 6319403008 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,501 basehttp 81093 6268923904 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,502 basehttp 81093 6302576640 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,503 basehttp 81093 6319403008 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,504 basehttp 81093 6235271168 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-18 09:46:56,505 basehttp 81093 6319403008 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-09-18 09:46:56,507 basehttp 81093 6285750272 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-09-18 09:46:56,507 basehttp 81093 6252097536 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-09-18 09:46:56,508 basehttp 81093 6252097536 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:56,509 basehttp 81093 6252097536 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:46:59,317 basehttp 81093 6235271168 "GET /admin/ HTTP/1.1" 200 9598
+INFO 2025-09-18 09:47:00,125 basehttp 81093 6235271168 "GET /admin/authentication/loginattempt/ HTTP/1.1" 200 14605
+INFO 2025-09-18 09:47:01,612 basehttp 81093 6235271168 "GET /admin/authentication/emailverification/ HTTP/1.1" 200 12434
+INFO 2025-09-18 09:47:01,625 basehttp 81093 6235271168 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,631 basehttp 81093 6268923904 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,631 basehttp 81093 6252097536 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,631 basehttp 81093 6285750272 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,632 basehttp 81093 6302576640 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,633 basehttp 81093 6319403008 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,634 basehttp 81093 6268923904 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,634 basehttp 81093 6285750272 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,634 basehttp 81093 6252097536 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,634 basehttp 81093 6302576640 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,635 basehttp 81093 6319403008 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,636 basehttp 81093 6268923904 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,636 basehttp 81093 6319403008 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,638 basehttp 81093 6235271168 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-18 09:47:01,638 basehttp 81093 6319403008 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:01,639 basehttp 81093 6319403008 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,891 basehttp 81093 6235271168 "GET /admin/authentication/refreshtoken/ HTTP/1.1" 200 12401
+INFO 2025-09-18 09:47:02,908 basehttp 81093 6235271168 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,913 basehttp 81093 6252097536 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,914 basehttp 81093 6268923904 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,915 basehttp 81093 6285750272 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,915 basehttp 81093 6302576640 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,916 basehttp 81093 6252097536 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,916 basehttp 81093 6319403008 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,916 basehttp 81093 6268923904 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,917 basehttp 81093 6285750272 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,917 basehttp 81093 6252097536 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,917 basehttp 81093 6302576640 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,918 basehttp 81093 6319403008 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,918 basehttp 81093 6252097536 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,919 basehttp 81093 6235271168 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-18 09:47:02,920 basehttp 81093 6252097536 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:02,921 basehttp 81093 6252097536 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,591 basehttp 81093 6252097536 "GET /admin/authentication/userprofile/ HTTP/1.1" 200 14605
+INFO 2025-09-18 09:47:03,605 basehttp 81093 6252097536 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,611 basehttp 81093 6319403008 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,611 basehttp 81093 6302576640 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,611 basehttp 81093 6268923904 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,612 basehttp 81093 6285750272 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,612 basehttp 81093 6235271168 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,614 basehttp 81093 6319403008 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,614 basehttp 81093 6285750272 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,615 basehttp 81093 6235271168 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,615 basehttp 81093 6302576640 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,616 basehttp 81093 6268923904 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,616 basehttp 81093 6235271168 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,616 basehttp 81093 6319403008 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,618 basehttp 81093 6319403008 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,619 basehttp 81093 6319403008 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-18 09:47:03,619 basehttp 81093 6252097536 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-18 09:47:03,626 basehttp 81093 6252097536 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+ERROR 2025-09-18 09:51:56,880 log 81093 6235271168 Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/views.py", line 80, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/serializers.py", line 100, in validate
+    data['user'] = user_serializer.data
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `timezone` is not valid for model `UserProfile` in `apps.authentication.serializers.UserProfileSerializer`.
+ERROR 2025-09-18 09:51:56,887 basehttp 81093 6235271168 "POST /api/v1/auth/login/ HTTP/1.1" 500 170445
+INFO 2025-09-18 09:52:06,122 autoreload 81729 8804327616 Watching for file changes with StatReloader
+ERROR 2025-09-18 09:52:10,876 log 81729 6202077184 Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/views.py", line 80, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/serializers.py", line 100, in validate
+    data['user'] = user_serializer.data
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `timezone` is not valid for model `UserProfile` in `apps.authentication.serializers.UserProfileSerializer`.
+ERROR 2025-09-18 09:52:10,879 basehttp 81729 6202077184 "POST /api/v1/auth/login/ HTTP/1.1" 500 170445
+INFO 2025-09-18 09:53:11,181 autoreload 81729 8804327616 /Users/roshanrai/Documents/personal projects/smart-collab-backend/config/settings/base.py changed, reloading.
+ERROR: Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/views.py", line 80, in post
+    response = super().post(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/serializers.py", line 100, in validate
+    data['user'] = user_serializer.data
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 525, in to_representation
+    for field in fields:
+                 ^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `timezone` is not valid for model `UserProfile` in `apps.authentication.serializers.UserProfileSerializer`.
+ERROR: Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_profile_user_id_key"
+DETAIL:  Key (user_id)=(2) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/views.py", line 41, in post
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/apps/authentication/serializers.py", line 83, in create
+    UserProfile.objects.create(
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/roshanrai/Documents/personal projects/smart-collab-backend/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "users_profile_user_id_key"
+DETAIL:  Key (user_id)=(2) already exists.
+

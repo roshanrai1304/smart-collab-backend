@@ -1,0 +1,6 @@
+__pycache__/
+.cursor/
+.venv
+.env
+implementation/
+test.ipynb

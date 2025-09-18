@@ -1,0 +1,40 @@
+# Core Django
+django
+djangorestframework
+django-cors-headers
+django-extensions
+
+# Database
+psycopg2-binary
+pgvector
+
+# Authentication & JWT
+djangorestframework-simplejwt
+django-oauth-toolkit
+
+# WebSockets & Channels
+channels
+channels-redis
+
+# Background Tasks
+celery
+redis
+django-redis
+
+# Environment Management
+python-decouple
+django-environ
+
+# API Documentation
+drf-spectacular
+
+# File Handling
+pillow
+python-magic
+
+# Utilities
+pytz
+python-dateutil
+
+# API Extensions
+drf-nested-routers
