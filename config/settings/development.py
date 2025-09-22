@@ -1,11 +1,12 @@
 """
 Development settings for Smart Collaborative Backend project.
 """
-from .base import *
+
+from .base import *  # noqa: F401, F403
 
 # Development-specific settings
 DEBUG = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 # CORS settings for development
 CORS_ALLOW_ALL_ORIGINS = True
@@ -15,16 +16,18 @@ CORS_ALLOW_CREDENTIALS = True
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # Commented out to use .env setting
 
 # Development logging
-LOGGING['handlers']['console']['level'] = 'DEBUG'
-LOGGING['loggers']['django']['level'] = 'DEBUG'
+LOGGING["handlers"]["console"]["level"] = "DEBUG"  # noqa: F405
+LOGGING["loggers"]["django"]["level"] = "DEBUG"  # noqa: F405
 
 # Development-specific Django REST Framework settings
-REST_FRAMEWORK.update({
-    'DEFAULT_RENDERER_CLASSES': [
-        'rest_framework.renderers.JSONRenderer',
-        'rest_framework.renderers.BrowsableAPIRenderer',
-    ],
-})
+REST_FRAMEWORK.update(  # noqa: F405
+    {
+        "DEFAULT_RENDERER_CLASSES": [
+            "rest_framework.renderers.JSONRenderer",
+            "rest_framework.renderers.BrowsableAPIRenderer",
+        ],
+    }
+)
 
 # Celery settings for development
 CELERY_TASK_ALWAYS_EAGER = False

@@ -1,53 +1,69 @@
 """
 URLs for organizations app.
 """
-from django.urls import path, include
+
+from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 from .views import (
-    OrganizationViewSet, TeamViewSet, 
-    UserOrganizationsView, UserTeamsView
+    OrganizationViewSet,
+    TeamViewSet,
+    UserOrganizationsView,
+    UserTeamsView,
 )
 
 # Create main router for organizations
 router = DefaultRouter()
-router.register(r'', OrganizationViewSet, basename='organization')
+router.register(r"", OrganizationViewSet, basename="organization")
 
 # Team URLs will be handled manually for now
 team_patterns = [
-    path('<uuid:organization_id>/teams/', TeamViewSet.as_view({
-        'get': 'list',
-        'post': 'create'
-    }), name='organization-teams-list'),
-    path('<uuid:organization_id>/teams/<uuid:id>/', TeamViewSet.as_view({
-        'get': 'retrieve',
-        'put': 'update',
-        'patch': 'partial_update',
-        'delete': 'destroy'
-    }), name='organization-teams-detail'),
-    path('<uuid:organization_id>/teams/<uuid:id>/members/', TeamViewSet.as_view({
-        'get': 'members'
-    }), name='organization-teams-members'),
-    path('<uuid:organization_id>/teams/<uuid:id>/invite/', TeamViewSet.as_view({
-        'post': 'invite'
-    }), name='organization-teams-invite'),
+    path(
+        "<uuid:organization_id>/teams/",
+        TeamViewSet.as_view({"get": "list", "post": "create"}),
+        name="organization-teams-list",
+    ),
+    path(
+        "<uuid:organization_id>/teams/<uuid:id>/",
+        TeamViewSet.as_view(
+            {
+                "get": "retrieve",
+                "put": "update",
+                "patch": "partial_update",
+                "delete": "destroy",
+            }
+        ),
+        name="organization-teams-detail",
+    ),
+    path(
+        "<uuid:organization_id>/teams/<uuid:id>/members/",
+        TeamViewSet.as_view({"get": "members"}),
+        name="organization-teams-members",
+    ),
+    path(
+        "<uuid:organization_id>/teams/<uuid:id>/invite/",
+        TeamViewSet.as_view({"post": "invite"}),
+        name="organization-teams-invite",
+    ),
 ]
 
 urlpatterns = [
     # User-specific endpoints
-    path('user/organizations/', UserOrganizationsView.as_view(), name='user-organizations'),
-    path('user/teams/', UserTeamsView.as_view(), name='user-teams'),
-    
+    path(
+        "user/organizations/",
+        UserOrganizationsView.as_view(),
+        name="user-organizations",
+    ),
+    path("user/teams/", UserTeamsView.as_view(), name="user-teams"),
     # Include router URLs
-    path('', include(router.urls)),
-    
+    path("", include(router.urls)),
     # Team URLs
-    path('', include(team_patterns)),
+    path("", include(team_patterns)),
 ]
 
 # URL patterns generated:
 # GET    /api/v1/organizations/                              - List user's organizations
-# POST   /api/v1/organizations/                              - Create organization  
+# POST   /api/v1/organizations/                              - Create organization
 # GET    /api/v1/organizations/{id}/                         - Get organization details
 # PUT    /api/v1/organizations/{id}/                         - Update organization
 # PATCH  /api/v1/organizations/{id}/                         - Partial update organization
