@@ -1,31 +1,35 @@
 """
 Authentication views for Smart Collaborative Backend.
 """
+
 import secrets
 from datetime import timedelta
-from django.contrib.auth import login
+
 from django.contrib.auth.models import User
 from django.utils import timezone
-from django.conf import settings
-from rest_framework import status, generics, permissions
+from drf_spectacular.utils import extend_schema
+from rest_framework import generics, permissions, status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from rest_framework_simplejwt.tokens import RefreshToken
-from drf_spectacular.utils import extend_schema
+from rest_framework_simplejwt.views import TokenObtainPairView
 
-from .models import UserProfile, LoginAttempt, PasswordResetToken, EmailVerification
+from .models import EmailVerification, LoginAttempt
 from .serializers import (
-    UserSerializer, UserRegistrationSerializer, CustomTokenObtainPairSerializer,
-    PasswordChangeSerializer, UserUpdateSerializer, EmailVerificationSerializer,
-    ResendVerificationSerializer
+    CustomTokenObtainPairSerializer,
+    EmailVerificationSerializer,
+    PasswordChangeSerializer,
+    ResendVerificationSerializer,
+    UserRegistrationSerializer,
+    UserSerializer,
+    UserUpdateSerializer,
 )
-from .utils import send_verification_email, get_client_ip
+from .utils import get_client_ip, send_verification_email
 
 
 class RegisterView(generics.CreateAPIView):
     """User registration endpoint."""
+
     queryset = User.objects.all()
     serializer_class = UserRegistrationSerializer
     permission_classes = [permissions.AllowAny]
@@ -33,63 +37,61 @@ class RegisterView(generics.CreateAPIView):
     @extend_schema(
         summary="Register new user",
         description="Create a new user account. Email verification required before activation.",
-        responses={201: UserSerializer, 400: "Validation errors"}
+        responses={201: UserSerializer, 400: "Validation errors"},
     )
     def post(self, request, *args, **kwargs):
         """Create new user and send verification email."""
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
-        
+
         # Create email verification token
         verification_token = secrets.token_urlsafe(32)
         EmailVerification.objects.create(
             user=user,
             email=user.email,
             token=verification_token,
-            expires_at=timezone.now() + timedelta(days=7)
+            expires_at=timezone.now() + timedelta(days=7),
         )
-        
+
         # Send verification email
         send_verification_email(user.email, verification_token)
-        
+
         return Response(
             {
                 "message": "User registered successfully. Please check your email for verification.",
-                "user": UserSerializer(user).data
+                "user": UserSerializer(user).data,
             },
-            status=status.HTTP_201_CREATED
+            status=status.HTTP_201_CREATED,
         )
 
 
 class CustomTokenObtainPairView(TokenObtainPairView):
     """Custom JWT token obtain view with login tracking."""
+
     serializer_class = CustomTokenObtainPairSerializer
 
     @extend_schema(
         summary="Obtain JWT token pair",
         description="Login with email/password and get access/refresh tokens",
-        responses={200: "Token pair with user information", 401: "Invalid credentials"}
+        responses={200: "Token pair with user information", 401: "Invalid credentials"},
     )
     def post(self, request, *args, **kwargs):
         """Login user and return tokens with user info."""
         ip_address = get_client_ip(request)
-        user_agent = request.META.get('HTTP_USER_AGENT', '')
-        email = request.data.get('username', '')
-        
+        user_agent = request.META.get("HTTP_USER_AGENT", "")
+        email = request.data.get("username", "")
+
         try:
             response = super().post(request, *args, **kwargs)
-            
+
             # Log successful login
             LoginAttempt.objects.create(
-                email=email,
-                ip_address=ip_address,
-                user_agent=user_agent,
-                success=True
+                email=email, ip_address=ip_address, user_agent=user_agent, success=True
             )
-            
+
             return response
-            
+
         except Exception as e:
             # Log failed login
             LoginAttempt.objects.create(
@@ -97,13 +99,14 @@ class CustomTokenObtainPairView(TokenObtainPairView):
                 ip_address=ip_address,
                 user_agent=user_agent,
                 success=False,
-                failure_reason=str(e)[:100]
+                failure_reason=str(e)[:100],
             )
             raise
 
 
 class ProfileView(generics.RetrieveUpdateAPIView):
     """User profile view."""
+
     serializer_class = UserUpdateSerializer
     permission_classes = [permissions.IsAuthenticated]
 
@@ -113,7 +116,7 @@ class ProfileView(generics.RetrieveUpdateAPIView):
     @extend_schema(
         summary="Get user profile",
         description="Get current user profile information",
-        responses={200: UserSerializer}
+        responses={200: UserSerializer},
     )
     def get(self, request, *args, **kwargs):
         """Get user profile."""
@@ -124,35 +127,35 @@ class ProfileView(generics.RetrieveUpdateAPIView):
 
 class PasswordChangeView(APIView):
     """Password change endpoint."""
+
     permission_classes = [permissions.IsAuthenticated]
 
     @extend_schema(
         summary="Change password",
         description="Change user password",
         request=PasswordChangeSerializer,
-        responses={200: "Password changed successfully", 400: "Validation errors"}
+        responses={200: "Password changed successfully", 400: "Validation errors"},
     )
     def post(self, request):
         """Change user password."""
         serializer = PasswordChangeSerializer(
-            data=request.data,
-            context={'request': request}
+            data=request.data, context={"request": request}
         )
         serializer.is_valid(raise_exception=True)
-        
+
         # Change password
-        request.user.set_password(serializer.validated_data['new_password'])
+        request.user.set_password(serializer.validated_data["new_password"])
         request.user.save()
-        
-        return Response({'message': 'Password changed successfully'})
+
+        return Response({"message": "Password changed successfully"})
 
 
 @extend_schema(
     summary="Get current user",
     description="Get current authenticated user information",
-    responses={200: UserSerializer}
+    responses={200: UserSerializer},
 )
-@api_view(['GET'])
+@api_view(["GET"])
 @permission_classes([permissions.IsAuthenticated])
 def current_user(request):
     """Get current user information."""
@@ -162,62 +165,62 @@ def current_user(request):
 
 class EmailVerificationView(generics.GenericAPIView):
     """Email verification endpoint."""
+
     serializer_class = EmailVerificationSerializer
     permission_classes = [permissions.AllowAny]
 
     @extend_schema(
         summary="Verify email address (GET)",
         description="Verify user email address using verification token from URL parameter",
-        responses={200: "Email verified successfully", 400: "Invalid token"}
+        responses={200: "Email verified successfully", 400: "Invalid token"},
     )
     def get(self, request):
         """Verify email with token from URL parameter."""
-        token = request.GET.get('token')
+        token = request.GET.get("token")
         if not token:
             return Response(
-                {'error': 'Token parameter is required'},
-                status=status.HTTP_400_BAD_REQUEST
+                {"error": "Token parameter is required"},
+                status=status.HTTP_400_BAD_REQUEST,
             )
-        
+
         return self._verify_token(token)
 
     @extend_schema(
         summary="Verify email address (POST)",
         description="Verify user email address using verification token in request body",
-        responses={200: "Email verified successfully", 400: "Invalid token"}
+        responses={200: "Email verified successfully", 400: "Invalid token"},
     )
     def post(self, request):
         """Verify email with token from request body."""
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        
+
         # The serializer already validates and returns the verification object
-        verification = serializer.validated_data['token']
-        
+        verification = serializer.validated_data["token"]
+
         return self._verify_token_object(verification)
-    
+
     def _verify_token(self, token):
         """Verify token and activate user."""
         try:
-            verification = EmailVerification.objects.get(
-                token=token,
-                is_verified=False
-            )
-            
+            verification = EmailVerification.objects.get(token=token, is_verified=False)
+
             if verification.is_expired():
                 return Response(
-                    {'error': 'Verification token has expired. Please request a new verification email.'},
-                    status=status.HTTP_400_BAD_REQUEST
+                    {
+                        "error": "Verification token has expired. Please request a new verification email."
+                    },
+                    status=status.HTTP_400_BAD_REQUEST,
                 )
-            
+
             return self._verify_token_object(verification)
-            
+
         except EmailVerification.DoesNotExist:
             return Response(
-                {'error': 'Invalid verification token.'},
-                status=status.HTTP_400_BAD_REQUEST
+                {"error": "Invalid verification token."},
+                status=status.HTTP_400_BAD_REQUEST,
             )
-    
+
     def _verify_token_object(self, verification):
         """Common verification logic."""
         # Verify email and activate user
@@ -225,47 +228,51 @@ class EmailVerificationView(generics.GenericAPIView):
         user = verification.user
         user.is_active = True
         user.save()
-        
-        return Response({
-            'message': 'Email verified successfully! Your account is now active and you can login.',
-            'user': UserSerializer(user).data,
-            'redirect_message': 'You can now close this page and login to Smart Collab.'
-        })
+
+        return Response(
+            {
+                "message": "Email verified successfully! Your account is now active and you can login.",
+                "user": UserSerializer(user).data,
+                "redirect_message": "You can now close this page and login to Smart Collab.",
+            }
+        )
 
 
 class ResendVerificationView(generics.GenericAPIView):
     """Resend email verification endpoint."""
+
     serializer_class = ResendVerificationSerializer
     permission_classes = [permissions.AllowAny]
 
     @extend_schema(
         summary="Resend verification email",
         description="Resend verification email to user",
-        responses={200: "Verification email sent", 400: "User not found or already verified"}
+        responses={
+            200: "Verification email sent",
+            400: "User not found or already verified",
+        },
     )
     def post(self, request):
         """Resend verification email."""
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        
+
         # The serializer already validates and returns the user object
-        user = serializer.validated_data['email']
-        
+        user = serializer.validated_data["email"]
+
         # Delete old verification tokens
         EmailVerification.objects.filter(user=user).delete()
-        
+
         # Create new verification token
         verification_token = secrets.token_urlsafe(32)
         EmailVerification.objects.create(
             user=user,
             email=user.email,
             token=verification_token,
-            expires_at=timezone.now() + timedelta(days=7)
+            expires_at=timezone.now() + timedelta(days=7),
         )
-        
+
         # Send verification email
         send_verification_email(user.email, verification_token)
-        
-        return Response({
-            'message': 'Verification email sent successfully'
-        })
+
+        return Response({"message": "Verification email sent successfully"})
