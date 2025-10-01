@@ -204,6 +204,8 @@ class TeamCreateSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         """Create team with organization and current user."""
+        from django.db import transaction
+
         validated_data["organization"] = self.context["organization"]
         validated_data["created_by"] = self.context["request"].user
 
@@ -211,7 +213,22 @@ class TeamCreateSerializer(serializers.ModelSerializer):
         if not validated_data.get("slug"):
             validated_data["slug"] = slugify(validated_data["name"])
 
-        return super().create(validated_data)
+        # Create team and add creator as member in a transaction
+        with transaction.atomic():
+            team = super().create(validated_data)
+
+            # Automatically add the creator as a team lead
+            from .models import TeamMembership
+
+            TeamMembership.objects.create(
+                team=team,
+                user=self.context["request"].user,
+                role="lead",
+                status="active",
+                invited_by=self.context["request"].user,
+            )
+
+        return team
 
 
 class OrganizationMembershipSerializer(serializers.ModelSerializer):

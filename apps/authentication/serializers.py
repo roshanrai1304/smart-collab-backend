@@ -304,3 +304,208 @@ class UserUpdateSerializer(serializers.ModelSerializer):
             profile.save()
 
         return instance
+
+
+class UserOrganizationTeamSerializer(serializers.Serializer):
+    """
+    Serializer for user's organizations and teams details.
+    Returns comprehensive information about user's memberships.
+    """
+
+    organizations = serializers.SerializerMethodField()
+    teams = serializers.SerializerMethodField()
+    memberships_summary = serializers.SerializerMethodField()
+
+    def get_organizations(self, user):
+        """Get all organizations the user belongs to."""
+        from apps.organizations.models import OrganizationMembership
+
+        memberships = (
+            OrganizationMembership.objects.filter(user=user, status="active")
+            .select_related("organization")
+            .order_by("-joined_at")
+        )
+
+        organizations = []
+        for membership in memberships:
+            org = membership.organization
+            organizations.append(
+                {
+                    "id": str(org.id),
+                    "name": org.name,
+                    "slug": org.slug,
+                    "domain": org.domain,
+                    "description": org.description,
+                    "logo_url": org.logo_url,
+                    "settings": org.settings,
+                    "membership": {
+                        "role": membership.role,
+                        "status": membership.status,
+                        "joined_at": membership.joined_at,
+                        "is_admin": membership.role in ["admin", "owner"],
+                        "permissions": self._get_org_permissions(membership.role),
+                    },
+                    "stats": {
+                        "total_members": org.memberships.filter(
+                            status="active"
+                        ).count(),
+                        "total_teams": org.teams.count(),
+                        "created_at": org.created_at,
+                    },
+                }
+            )
+
+        return organizations
+
+    def get_teams(self, user):
+        """Get all teams the user belongs to."""
+        from apps.organizations.models import Team  # noqa: F401
+        from apps.organizations.models import TeamMembership
+
+        memberships = (
+            TeamMembership.objects.filter(user=user, status="active")
+            .select_related("team", "team__organization")
+            .order_by("-joined_at")
+        )
+
+        teams = []
+        for membership in memberships:
+            team = membership.team
+            teams.append(
+                {
+                    "id": str(team.id),
+                    "name": team.name,
+                    "slug": team.slug,
+                    "description": team.description,
+                    "color": team.color,
+                    "is_default": team.is_default,
+                    "is_archived": team.is_archived,
+                    "settings": team.settings,
+                    "organization": {
+                        "id": str(team.organization.id),
+                        "name": team.organization.name,
+                    },
+                    "membership": {
+                        "role": membership.role,
+                        "status": membership.status,
+                        "joined_at": membership.joined_at,
+                        "is_admin": membership.role in ["admin", "lead"],
+                        "permissions": self._get_team_permissions(membership.role),
+                    },
+                    "stats": {
+                        "total_members": team.memberships.filter(
+                            status="active"
+                        ).count(),
+                        "total_documents": getattr(
+                            team, "documents", team.__class__.objects.none()
+                        ).count(),
+                        "total_files": getattr(
+                            team, "files", team.__class__.objects.none()
+                        ).count(),
+                        "created_at": team.created_at,
+                    },
+                }
+            )
+
+        return teams
+
+    def get_memberships_summary(self, user):
+        """Get summary statistics of user's memberships."""
+        from apps.organizations.models import OrganizationMembership, TeamMembership
+
+        # Count active memberships
+        org_memberships = OrganizationMembership.objects.filter(
+            user=user, status="active"
+        )
+        team_memberships = TeamMembership.objects.filter(user=user, status="active")
+
+        # Count admin roles
+        org_admin_count = org_memberships.filter(role__in=["admin", "owner"]).count()
+        team_admin_count = team_memberships.filter(role__in=["admin", "lead"]).count()
+
+        return {
+            "total_organizations": org_memberships.count(),
+            "total_teams": team_memberships.count(),
+            "admin_organizations": org_admin_count,
+            "admin_teams": team_admin_count,
+            "member_since": user.date_joined,
+            "last_active": getattr(user, "profile", None) and user.profile.last_active,
+        }
+
+    def _get_org_permissions(self, role):
+        """Generate organization permissions based on role."""
+        permissions = {
+            "can_create_teams": False,
+            "can_invite_members": False,
+            "can_manage_settings": False,
+            "can_delete_organization": False,
+        }
+
+        if role == "owner":
+            permissions.update(
+                {
+                    "can_create_teams": True,
+                    "can_invite_members": True,
+                    "can_manage_settings": True,
+                    "can_delete_organization": True,
+                }
+            )
+        elif role == "admin":
+            permissions.update(
+                {
+                    "can_create_teams": True,
+                    "can_invite_members": True,
+                    "can_manage_settings": True,
+                    "can_delete_organization": False,
+                }
+            )
+        elif role == "member":
+            permissions.update(
+                {
+                    "can_create_teams": False,
+                    "can_invite_members": False,
+                    "can_manage_settings": False,
+                    "can_delete_organization": False,
+                }
+            )
+
+        return permissions
+
+    def _get_team_permissions(self, role):
+        """Generate team permissions based on role."""
+        permissions = {
+            "can_manage_members": False,
+            "can_create_documents": False,
+            "can_upload_files": False,
+            "can_delete_team": False,
+        }
+
+        if role == "lead":
+            permissions.update(
+                {
+                    "can_manage_members": True,
+                    "can_create_documents": True,
+                    "can_upload_files": True,
+                    "can_delete_team": True,
+                }
+            )
+        elif role == "editor":
+            permissions.update(
+                {
+                    "can_manage_members": False,
+                    "can_create_documents": True,
+                    "can_upload_files": True,
+                    "can_delete_team": False,
+                }
+            )
+        elif role == "viewer":
+            permissions.update(
+                {
+                    "can_manage_members": False,
+                    "can_create_documents": False,
+                    "can_upload_files": False,
+                    "can_delete_team": False,
+                }
+            )
+
+        return permissions

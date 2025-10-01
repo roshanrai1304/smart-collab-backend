@@ -12,6 +12,7 @@ from .views import (
     ProfileView,
     RegisterView,
     ResendVerificationView,
+    UserOrganizationTeamView,
     current_user,
 )
 
@@ -30,6 +31,11 @@ urlpatterns = [
     # User profile endpoints
     path("profile/", ProfileView.as_view(), name="auth_profile"),
     path("me/", current_user, name="auth_current_user"),
+    path(
+        "organizations-teams/",
+        UserOrganizationTeamView.as_view(),
+        name="auth_user_orgs_teams",
+    ),
     # Password management
     path("password/change/", PasswordChangeView.as_view(), name="auth_password_change"),
 ]

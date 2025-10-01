@@ -43,7 +43,7 @@ lint: ## Check for linting errors using flake8 and other tools
 	@echo "--- Django Check ---"
 	python manage.py check
 	@echo "--- Import sorting (isort) ---"
-	-isort apps/ config/ --check-only --diff
+	-isort apps/ config/ --check-only --diff --profile black
 	@echo "--- Code formatting (black) ---"
 	-black apps/ config/ --check --diff
 
@@ -54,7 +54,7 @@ lint-install: ## Install linting tools
 lint-fix: ## Auto-fix linting issues where possible
 	@echo "🔧 Auto-fixing linting issues..."
 	@echo "--- Fixing import order ---"
-	isort apps/ config/
+	isort apps/ config/ --profile black
 	@echo "--- Formatting code ---"
 	black apps/ config/
 	@echo "--- Running final check ---"
