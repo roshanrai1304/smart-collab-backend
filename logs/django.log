@@ -1,0 +1,114 @@
+2025-10-07 13:14:31 [WARNING] django.request: Not Found: /api/v1/mobile-users/8076022747/water-bodies
+2025-10-08 10:59:46 [WARNING] django.request: Not Found: /docs
+2025-10-08 11:41:25 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:03 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:06 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:06 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:07 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:07 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:12 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:14 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:23 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:31 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:31 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:33 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-08 11:42:34 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:13:22 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:13:56 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:14:15 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:32:51 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:33:06 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:33:58 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:37:25 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:40:28 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:42:31 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:42:31 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:42:31 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:42:33 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:21 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:21 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:21 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:21 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:23 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:40 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:40 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:40 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:40 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:42 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:58 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:58 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:58 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:58 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:59 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:59 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:43:59 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:01 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:01 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:01 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:02 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:02 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:02 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:04 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:04 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:04 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:44:06 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-09 12:46:02 [WARNING] django.request: Bad Request: /api/v1/documents/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/auto-save/
+2025-10-15 14:18:10 [ERROR] apps.ai_services.services.ollama_client: Ollama health check failed: HTTP error 405: 405 method not allowed
+2025-10-15 14:19:08 [ERROR] apps.ai_services.services.ollama_client: Text generation failed: HTTP error 404: {"error":"model 'llama3.1:8b' not found"}
+2025-10-15 14:22:04 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document f41a3483-f8b7-4d0b-8856-fba9944b905d: [Errno 61] Connection refused
+2025-10-15 15:36:02 [WARNING] django.request: Not Found: /api/v1/measurement-data/31/category-summary
+2025-10-16 06:29:55 [ERROR] apps.ai_services.services.context_processor: Error getting team context: ['“test-team” is not a valid UUID.']
+2025-10-16 06:31:31 [WARNING] apps.ai_services.services.context_processor: Team 9a5319d3-d8bb-4ffc-8b79-c19162604913 not found
+2025-10-16 06:32:01 [WARNING] apps.ai_services.services.context_processor: Team 52d2f514-1386-4301-82f4-b5772e4d37c9 not found
+2025-10-16 06:33:33 [ERROR] apps.ai_services.services.context_processor: Error getting team context: ['“mock-team” is not a valid UUID.']
+2025-10-16 07:56:12 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:12 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:12 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:12 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:15 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:15 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:15 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:17 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document bb0b1881-d714-45fa-b06b-d077af795478: [Errno 61] Connection refused
+2025-10-16 07:56:17 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document bb0b1881-d714-45fa-b06b-d077af795478: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 07:56:22 [ERROR] apps.ai_services.services.embedding_generator: Similar document search failed: can't adapt type 'numpy.float32'
+2025-10-16 07:56:22 [ERROR] apps.ai_services.services.embedding_generator: Similar document search failed: can't adapt type 'numpy.float32'
+2025-10-16 07:56:28 [WARNING] django.request: Not Found: /ws/ai/document/bb0b1881-d714-45fa-b06b-d077af795478/
+2025-10-16 07:56:28 [ERROR] apps.ai_services.views: Error generating document summary: [Errno 61] Connection refused
+2025-10-16 07:56:28 [ERROR] django.request: Internal Server Error: /api/v1/ai/documents/bb0b1881-d714-45fa-b06b-d077af795478/summary/
+2025-10-16 08:04:47 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:04:47 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:04:47 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:04:48 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:04:49 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:04:50 [WARNING] django.request: Not Found: /ws/ai/document/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/
+2025-10-16 08:04:50 [WARNING] apps.ai_services.views: Celery not available, processing synchronously: [Errno 61] Connection refused
+2025-10-16 08:04:51 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:04:51 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:05:15 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:05:15 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:05:15 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:05:15 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:05:15 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:05:15 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:05:17 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:05:17 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:05:17 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:05:17 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:05:19 [ERROR] apps.ai_services.signals: Failed to queue AI processing for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: [Errno 61] Connection refused
+2025-10-16 08:05:19 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:20 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:20 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:20 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:22 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:22 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:22 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:24 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:10:28 [WARNING] django.request: Not Found: /ws/ai/document/9c8022cf-cf54-403d-9c38-ae1c4a9e2943/
+2025-10-16 08:13:11 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:13:11 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:13:11 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:13:13 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:13:13 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:13:15 [ERROR] apps.ai_services.services.embedding_generator: Error updating embedding for document 9c8022cf-cf54-403d-9c38-ae1c4a9e2943: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-16 08:13:19 [ERROR] apps.ai_services.services.embedding_generator: Similar document search failed: can't adapt type 'numpy.float32'
+2025-10-16 08:13:19 [ERROR] apps.ai_services.services.embedding_generator: Similar document search failed: can't adapt type 'numpy.float32'

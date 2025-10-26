@@ -432,5 +432,52 @@ LOGGING = {
             "level": "INFO",
             "propagate": False,
         },
+        "apps.ai_services": {
+            "handlers": ["console", "file"],
+            "level": "INFO",
+            "propagate": False,
+        },
     },
 }
+
+# ===========================
+# AI SERVICES CONFIGURATION
+# ===========================
+
+# Ollama Configuration
+OLLAMA_BASE_URL = config("OLLAMA_BASE_URL", default="http://localhost:11434")
+OLLAMA_DEFAULT_MODEL = config("OLLAMA_DEFAULT_MODEL", default="qwen2.5:7b")
+OLLAMA_EMBEDDING_MODEL = config("OLLAMA_EMBEDDING_MODEL", default="qwen3-embedding:8b")
+OLLAMA_TIMEOUT = config("OLLAMA_TIMEOUT", default=120, cast=int)
+
+# Embedding Model Configuration
+EMBEDDING_DIMENSIONS = config("EMBEDDING_DIMENSIONS", default=4096, cast=int)  # qwen3-embedding:8b supports up to 4096
+EMBEDDING_CONTEXT_LENGTH = config("EMBEDDING_CONTEXT_LENGTH", default=32000, cast=int)  # 32k context length
+EMBEDDING_SUPPORTED_LANGUAGES = config("EMBEDDING_SUPPORTED_LANGUAGES", default="100+")  # Multi-language support
+
+# Multi-Model Strategy Configuration
+OLLAMA_SUMMARIZATION_MODEL = config("OLLAMA_SUMMARIZATION_MODEL", default="qwen2.5:7b")  # Quality model for summaries
+OLLAMA_TAGGING_MODEL = config("OLLAMA_TAGGING_MODEL", default="mistral:latest")  # Fast model for tagging
+OLLAMA_CLASSIFICATION_MODEL = config("OLLAMA_CLASSIFICATION_MODEL", default="mistral:latest")  # Fast model for classification
+OLLAMA_ANALYSIS_MODEL = config("OLLAMA_ANALYSIS_MODEL", default="qwen2.5:7b")  # Quality model for analysis
+
+# AI Processing Configuration
+AI_PROCESSING_ENABLED = config("AI_PROCESSING_ENABLED", default=True, cast=bool)
+AI_AUTO_PROCESS_NEW_DOCUMENTS = config("AI_AUTO_PROCESS_NEW_DOCUMENTS", default=True, cast=bool)
+AI_BATCH_SIZE = config("AI_BATCH_SIZE", default=10, cast=int)
+AI_MAX_CONTENT_LENGTH = config("AI_MAX_CONTENT_LENGTH", default=50000, cast=int)
+
+# AI Cache Configuration
+AI_CACHE_TIMEOUT_EMBEDDINGS = config("AI_CACHE_TIMEOUT_EMBEDDINGS", default=604800, cast=int)  # 7 days
+AI_CACHE_TIMEOUT_SUGGESTIONS = config("AI_CACHE_TIMEOUT_SUGGESTIONS", default=3600, cast=int)  # 1 hour
+AI_CACHE_TIMEOUT_ANALYSIS = config("AI_CACHE_TIMEOUT_ANALYSIS", default=86400, cast=int)  # 24 hours
+
+# AI Quality Thresholds
+AI_MIN_DOCUMENT_LENGTH = config("AI_MIN_DOCUMENT_LENGTH", default=10, cast=int)
+AI_SIMILARITY_THRESHOLD = config("AI_SIMILARITY_THRESHOLD", default=0.7, cast=float)
+AI_CONFIDENCE_THRESHOLD = config("AI_CONFIDENCE_THRESHOLD", default=0.5, cast=float)
+
+# AI Processing Limits
+AI_MAX_SUMMARY_LENGTH = config("AI_MAX_SUMMARY_LENGTH", default=500, cast=int)
+AI_MAX_TAGS_COUNT = config("AI_MAX_TAGS_COUNT", default=15, cast=int)
+AI_MAX_KEY_POINTS = config("AI_MAX_KEY_POINTS", default=10, cast=int)

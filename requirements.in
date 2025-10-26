@@ -38,3 +38,7 @@ python-dateutil
 
 # API Extensions
 drf-nested-routers
+
+# AI Services
+httpx  # For Ollama API communication
+celery
