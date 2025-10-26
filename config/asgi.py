@@ -14,7 +14,11 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django_asgi_app = get_asgi_application()
 
 # Import after Django is set up
-from apps.collaboration.routing import websocket_urlpatterns  # noqa: E402
+from apps.collaboration.routing import websocket_urlpatterns as collaboration_patterns  # noqa: E402
+from apps.ai_services.routing import websocket_urlpatterns as ai_patterns  # noqa: E402
+
+# Combine all WebSocket URL patterns
+websocket_urlpatterns = collaboration_patterns + ai_patterns
 
 application = ProtocolTypeRouter(
     {

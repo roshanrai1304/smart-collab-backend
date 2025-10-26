@@ -20,6 +20,7 @@ from .serializers import (
     EmailVerificationSerializer,
     PasswordChangeSerializer,
     ResendVerificationSerializer,
+    UserOrganizationTeamSerializer,
     UserRegistrationSerializer,
     UserSerializer,
     UserUpdateSerializer,
@@ -276,3 +277,28 @@ class ResendVerificationView(generics.GenericAPIView):
         send_verification_email(user.email, verification_token)
 
         return Response({"message": "Verification email sent successfully"})
+
+
+class UserOrganizationTeamView(generics.RetrieveAPIView):
+    """
+    Get user's organizations and teams details.
+    Returns comprehensive information about user's memberships.
+    """
+
+    serializer_class = UserOrganizationTeamSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    @extend_schema(
+        summary="Get user organizations and teams",
+        description="Retrieve detailed information about organizations and teams the user belongs to, "
+        "including roles, permissions, and statistics.",
+        responses={
+            200: UserOrganizationTeamSerializer,
+            401: "Authentication required",
+        },
+    )
+    def get(self, request):
+        """Get user's organizations and teams details."""
+        user = request.user
+        serializer = self.get_serializer(user)
+        return Response(serializer.data)

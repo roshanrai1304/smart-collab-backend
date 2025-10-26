@@ -56,6 +56,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "apps.core.middleware.APILoggingMiddleware",  # Custom API logging
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -151,8 +152,10 @@ REST_FRAMEWORK = {
 # JWT Settings
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "ACCESS_TOKEN_LIFETIME": timedelta(
+        hours=12
+    ),  # 12 hours for better development experience
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=30),  # 30 days for long-term sessions
     "ROTATE_REFRESH_TOKENS": True,
     "BLACKLIST_AFTER_ROTATION": True,
     "UPDATE_LAST_LOGIN": True,
@@ -259,6 +262,93 @@ FILE_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
 DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024  # 10MB
 FILE_UPLOAD_PERMISSIONS = 0o644
 
+# File Storage Configuration
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
+# Maximum file size (100MB)
+FILE_UPLOAD_MAX_SIZE = 100 * 1024 * 1024  # 100MB
+
+# Allowed file types for security
+ALLOWED_FILE_EXTENSIONS = [
+    # Images
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".gif",
+    ".webp",
+    ".bmp",
+    ".tiff",
+    # Documents
+    ".pdf",
+    ".doc",
+    ".docx",
+    ".txt",
+    ".md",
+    ".rtf",
+    ".odt",
+    # Spreadsheets
+    ".xls",
+    ".xlsx",
+    ".csv",
+    ".ods",
+    # Presentations
+    ".ppt",
+    ".pptx",
+    ".odp",
+    # Archives
+    ".zip",
+    ".tar",
+    ".gz",
+    ".rar",
+    ".7z",
+    # Audio
+    ".mp3",
+    ".wav",
+    ".flac",
+    ".aac",
+    ".ogg",
+    # Video
+    ".mp4",
+    ".avi",
+    ".mkv",
+    ".mov",
+    ".wmv",
+    ".flv",
+    # Code
+    ".py",
+    ".js",
+    ".html",
+    ".css",
+    ".json",
+    ".xml",
+    ".yaml",
+    ".yml",
+]
+
+# Blocked file extensions for security
+BLOCKED_FILE_EXTENSIONS = [
+    ".exe",
+    ".bat",
+    ".cmd",
+    ".com",
+    ".pif",
+    ".scr",
+    ".vbs",
+    ".js",
+    ".jar",
+    ".app",
+    ".deb",
+    ".pkg",
+    ".dmg",
+    ".sh",
+    ".ps1",
+    ".msi",
+]
+
+# Create media directory if it doesn't exist
+MEDIA_ROOT.mkdir(exist_ok=True)
+
 # Rate Limiting (for login attempts, etc.)
 LOGIN_ATTEMPT_LIMIT = config("LOGIN_ATTEMPT_LIMIT", default=5, cast=int)
 LOGIN_ATTEMPT_TIMEOUT = config(
@@ -288,44 +378,106 @@ LOGGING = {
             "format": "{levelname}: {message}",
             "style": "{",
         },
+        "api_request": {
+            "format": "🌐 {asctime} [{levelname}] {name}: {message}",
+            "style": "{",
+            "datefmt": "%H:%M:%S",
+        },
+        "detailed": {
+            "format": "{asctime} [{levelname}] {name}: {message}",
+            "style": "{",
+            "datefmt": "%Y-%m-%d %H:%M:%S",
+        },
     },
     "handlers": {
         "file": {
             "level": "WARNING",
             "class": "logging.FileHandler",
             "filename": LOGS_DIR / "django.log",
-            "formatter": "simple",
+            "formatter": "detailed",
         },
         "console": {
-            "level": "WARNING",
+            "level": "INFO",
             "class": "logging.StreamHandler",
-            "formatter": "minimal",
+            "formatter": "api_request",
+        },
+        "api_console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "api_request",
         },
     },
     "root": {
         "handlers": ["console"],
-        "level": "WARNING",
+        "level": "INFO",
     },
     "loggers": {
         "django": {
-            "handlers": ["file"],
-            "level": "WARNING",
+            "handlers": ["console", "file"],
+            "level": "INFO",
             "propagate": False,
         },
         "django.server": {
-            "handlers": [],
-            "level": "WARNING",
+            "handlers": ["api_console"],
+            "level": "INFO",
             "propagate": False,
         },
         "django.request": {
-            "handlers": ["file"],
-            "level": "ERROR",
+            "handlers": ["console", "file"],
+            "level": "INFO",
             "propagate": False,
         },
         "apps": {
             "handlers": ["console", "file"],
-            "level": "WARNING",
+            "level": "INFO",
+            "propagate": False,
+        },
+        "apps.ai_services": {
+            "handlers": ["console", "file"],
+            "level": "INFO",
             "propagate": False,
         },
     },
 }
+
+# ===========================
+# AI SERVICES CONFIGURATION
+# ===========================
+
+# Ollama Configuration
+OLLAMA_BASE_URL = config("OLLAMA_BASE_URL", default="http://localhost:11434")
+OLLAMA_DEFAULT_MODEL = config("OLLAMA_DEFAULT_MODEL", default="qwen2.5:7b")
+OLLAMA_EMBEDDING_MODEL = config("OLLAMA_EMBEDDING_MODEL", default="qwen3-embedding:8b")
+OLLAMA_TIMEOUT = config("OLLAMA_TIMEOUT", default=120, cast=int)
+
+# Embedding Model Configuration
+EMBEDDING_DIMENSIONS = config("EMBEDDING_DIMENSIONS", default=4096, cast=int)  # qwen3-embedding:8b supports up to 4096
+EMBEDDING_CONTEXT_LENGTH = config("EMBEDDING_CONTEXT_LENGTH", default=32000, cast=int)  # 32k context length
+EMBEDDING_SUPPORTED_LANGUAGES = config("EMBEDDING_SUPPORTED_LANGUAGES", default="100+")  # Multi-language support
+
+# Multi-Model Strategy Configuration
+OLLAMA_SUMMARIZATION_MODEL = config("OLLAMA_SUMMARIZATION_MODEL", default="qwen2.5:7b")  # Quality model for summaries
+OLLAMA_TAGGING_MODEL = config("OLLAMA_TAGGING_MODEL", default="mistral:latest")  # Fast model for tagging
+OLLAMA_CLASSIFICATION_MODEL = config("OLLAMA_CLASSIFICATION_MODEL", default="mistral:latest")  # Fast model for classification
+OLLAMA_ANALYSIS_MODEL = config("OLLAMA_ANALYSIS_MODEL", default="qwen2.5:7b")  # Quality model for analysis
+
+# AI Processing Configuration
+AI_PROCESSING_ENABLED = config("AI_PROCESSING_ENABLED", default=True, cast=bool)
+AI_AUTO_PROCESS_NEW_DOCUMENTS = config("AI_AUTO_PROCESS_NEW_DOCUMENTS", default=True, cast=bool)
+AI_BATCH_SIZE = config("AI_BATCH_SIZE", default=10, cast=int)
+AI_MAX_CONTENT_LENGTH = config("AI_MAX_CONTENT_LENGTH", default=50000, cast=int)
+
+# AI Cache Configuration
+AI_CACHE_TIMEOUT_EMBEDDINGS = config("AI_CACHE_TIMEOUT_EMBEDDINGS", default=604800, cast=int)  # 7 days
+AI_CACHE_TIMEOUT_SUGGESTIONS = config("AI_CACHE_TIMEOUT_SUGGESTIONS", default=3600, cast=int)  # 1 hour
+AI_CACHE_TIMEOUT_ANALYSIS = config("AI_CACHE_TIMEOUT_ANALYSIS", default=86400, cast=int)  # 24 hours
+
+# AI Quality Thresholds
+AI_MIN_DOCUMENT_LENGTH = config("AI_MIN_DOCUMENT_LENGTH", default=10, cast=int)
+AI_SIMILARITY_THRESHOLD = config("AI_SIMILARITY_THRESHOLD", default=0.7, cast=float)
+AI_CONFIDENCE_THRESHOLD = config("AI_CONFIDENCE_THRESHOLD", default=0.5, cast=float)
+
+# AI Processing Limits
+AI_MAX_SUMMARY_LENGTH = config("AI_MAX_SUMMARY_LENGTH", default=500, cast=int)
+AI_MAX_TAGS_COUNT = config("AI_MAX_TAGS_COUNT", default=15, cast=int)
+AI_MAX_KEY_POINTS = config("AI_MAX_KEY_POINTS", default=10, cast=int)
